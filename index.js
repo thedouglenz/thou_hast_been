@@ -27,7 +27,7 @@ db.once('open', function() {
 	User = mongoose.model('User', userSchema)
 });
 
-// USER functions
+/* --- USER functions --- */
 function findUserByEmail(email) {
 	User.find({email: email}, function(err, users) {
 		if(err) return console.error(error);
@@ -45,6 +45,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/about', function(req, res) {
+	console.log('thou hast visited the about page.');
 	res.render('about');
 });
 

@@ -1,5 +1,5 @@
 html {
-	background-color:#DFDFDF;
+	background-color:#BFBFBF;
 	color: #000;
 	margin-left:auto;
 	margin-right:auto;
@@ -55,4 +55,10 @@ body {
 
 .home-promote-p {
 	padding:10px;
+}
+
+
+#about-text {
+	margin-left: auto;
+	margin-right: auto;
 }
