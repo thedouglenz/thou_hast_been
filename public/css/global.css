@@ -1,0 +1,58 @@
+html {
+	background-color:#DFDFDF;
+	color: #000;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+body {
+	font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif
+}
+
+.container {
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pure-menu a {
+	color: GoldenRod;
+}
+
+.our-name {
+	color: GoldenRod;
+}
+
+.home-forms form {
+	background-color: #DFDFDF;
+	border-radius: 5;
+	margin:5px;
+	padding:5px;
+}
+
+.home-forms form legend {
+	color: GoldenRod;
+}
+
+.home-forms label, button {
+	margin-top:10px;
+}
+
+.home-forms input[type=text], .home-forms input[type=password] {
+	border: none;
+	background-color: #656565;
+	box-shadow: inset 0 1px 3px #555;
+	color: Orange;
+}
+
+.home-heading {
+	color:#565d64;
+	text-transform: uppercase;
+	font-weight: lighter;
+	white-space: nowrap;
+	font-size: 90%;
+}
+
+.home-promote-p {
+	padding:10px;
+}
