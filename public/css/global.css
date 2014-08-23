@@ -77,3 +77,11 @@ body {
 .post-login-headers p {
 	display: inline;
 }
+
+.facebook-buttons {
+	background-color: #4c66b4;
+	color: white;
+	border-radius: 3px;
+	font-weight: bold;
+	padding: 5px;
+}

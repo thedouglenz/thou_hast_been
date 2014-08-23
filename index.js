@@ -82,6 +82,8 @@ app.get('/logout', function(req, res) {
 	res.redirect('/');
 });
 
+// Local sign up / login
+
 app.post('/register', passport.authenticate('local-signup', 
 	{
 		successRedirect: '/dashboard',
@@ -95,6 +97,14 @@ app.post('/login', passport.authenticate('local-login', {
 	failureRedirect: '/',
 	failureFlase : true})
 );
+
+// Facebook sign up / login
+app.get('/auth/facebook', passport.authenticate('facebook', {scope:'email'}));
+
+app.get('/auth/facebook/callback', passport.authenticate('facebook', {
+	successRedirect : '/dashboard',
+	failureRedirect : '/'
+}));
 
 app.use(function(req, res) {
 	res.status(404);
