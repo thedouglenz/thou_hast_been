@@ -11,6 +11,7 @@ module.exports = function(passport) {
 		});
 	});
 
+	// Local Registration
 	passport.use('local-signup', new LocalStrategy(
 	{
 		usernameField: 'email',
@@ -35,6 +36,26 @@ module.exports = function(passport) {
 					});
 				}
 			});
+		});
+	}));
+
+	// Local Login
+	passport.use('local-login', new LocalStrategy(
+	{
+		usernameField : 'loginemail',
+		passwordField : 'loginpassword',
+		passReqToCallback : true
+	},
+	function(req, email, password, done) {
+		User.findOne({'email' : email}, function(err, user) {
+			if(err)
+				return done(err);
+			if(!user)
+				return done(null, false, req.flash('homeMessage' , 'User not found'));
+			if(!user.validPassword(password))
+				return done(null, false, req.flash('homeMessage' , 'Incorrect password'));
+
+			return done(null, user);
 		});
 	}));
 }

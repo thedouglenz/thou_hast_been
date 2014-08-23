@@ -52,6 +52,13 @@ function findUserByEmail(email) {
 	});
 }
 
+function isLoggedIn(req, res, next) {
+	if(req.isAuthenticated())
+		return next();
+
+	res.redirect('/');
+}
+
 app.engine('handlebars', hbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 app.use(express.static(__dirname + '/public'));
@@ -66,24 +73,27 @@ app.get('/about', function(req, res) {
 	res.render('about');
 });
 
+app.get('/dashboard', isLoggedIn, function(req, res) {
+	res.render('dashboard', {user : req.user});
+});
+
+app.get('/logout', function(req, res) {
+	req.logout();
+	res.redirect('/');
+});
+
 app.post('/register', passport.authenticate('local-signup', 
 	{
-		successRedirect: '/about',
+		successRedirect: '/dashboard',
 		failureRedirect: '/',
 		failureFlash : true
 	}));
-/*
-app.post('/login', function(req, res) {
-	var username = req.body.loginusername,
-	password = req.body.loginpassword;
 
-	console.log(username + " " + password);
-});
-*/
-app.post('/login', passport.authenticate('local', {
-	successRedirect: '/',
-	failureRedirect: '/login',
-	failureFlase: true})
+
+app.post('/login', passport.authenticate('local-login', {
+	successRedirect: '/dashboard',
+	failureRedirect: '/',
+	failureFlase : true})
 );
 
 app.use(function(req, res) {
