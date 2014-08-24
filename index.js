@@ -43,15 +43,7 @@ db.once('open', function() {
 // Configure the passport object according to ./config/passport
 require('./config/passport')(passport);
 
-
-/* --- USER functions --- */
-function findUserByEmail(email) {
-	User.find({email: email}, function(err, users) {
-		if(err) return console.error(error);
-		return users;
-	});
-}
-
+// isLoggedIn
 function isLoggedIn(req, res, next) {
 	if(req.isAuthenticated())
 		return next();

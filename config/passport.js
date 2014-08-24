@@ -33,6 +33,9 @@ module.exports = function(passport) {
 					var newUser = new User();
 					newUser.local.email = email;
 					newUser.local.password = newUser.generateHash(password);
+					var now = new Date();
+					newUser.local.created = now;
+					newUser.local.modified = now;
 					newUser.save(function(err) {
 						if(err)
 							throw err;
@@ -84,8 +87,13 @@ module.exports = function(passport) {
 					newUser.facebook.id = profile.id;
 					newUser.facebook.token = token;
 					newUser.facebook.name = profile.name.givenName + ' ' + profile.name.familyName;
-					newUser.email = profile.emails[0].value;
+					newUser.facebook.email = profile.emails[0].value;
 					
+					// Set local created and modified
+					var now = new Date();
+					newUser.local.created = now;
+					newUser.local.modified = now;
+
 					newUser.save(function(err) {
 						if(err)
 							throw err;
