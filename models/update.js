@@ -11,3 +11,5 @@ var updateSchema = mongoose.Schema({
 	},
 	when : Date
 });
+
+module.exports = mongoose.model('Update', updateSchema);
