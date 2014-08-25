@@ -4,7 +4,6 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-var favicon = require('favicon');
 var passport = require('passport'), 
 	LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
