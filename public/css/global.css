@@ -1,5 +1,5 @@
 html {
-	background-color:#BFBFBF;
+	background-color:#AFAFAF;
 	color: #000;
 	margin-left:auto;
 	margin-right:auto;
@@ -15,12 +15,24 @@ body {
 	margin-right: auto;
 }
 
+
+.our-name {
+	color: rgb(223, 117, 20);
+}
+
+/* Menus */
 .pure-menu a {
 	color: GoldenRod;
 }
+.active {
+	border-bottom: 2px Orange solid;
+}
+/* End Menus */
 
-.our-name {
-	color: GoldenRod;
+/* Forms */
+.button-orange {
+    background: rgb(223, 117, 20);
+    color: White;
 }
 
 .home-forms form {
@@ -44,6 +56,8 @@ body {
 	box-shadow: inset 0 1px 3px #555;
 	color: Orange;
 }
+
+/* End Forms*/
 
 .home-heading {
 	color:#565d64;

@@ -1,7 +1,7 @@
 <div class="pure-menu pure-menu-open pure-menu-horizontal">
 	<ul>
 		<a href="/" class="pure-menu-heading">thou hast been</a>
-		<li class="pure-menu-selected"><a href="/"> home </a></li>
+		<li class="pure-menu-selected active"><a href="/"> home </a></li>
 		<li><a href="/about"> about </a></li>
 	</ul>
 </div>
@@ -12,17 +12,17 @@
 	<div class="forms pure-u-1-3" id="register-form-div">
 		<form class="pure-form pure-form-stacked" id="home-register-form" action="register" method="post">
 			<fieldset>
-				<legend>Register</legend>
+				<legend><strong>Register</strong></legend>
 				<!--- Not going to use username for now
 				<label for="username"> username: </label>
 				<input type="text" id="username" name="username"></input>
 				--->
 				<label for="email"> email: </label>
-				<input type="text" id="email" name="email"></input>
+				<input type="text" id="email" name="email" placeholder="email"></input>
 
 				<label for="password"> password: </label>
-				<input type="password" id="password" name="password"></input>
-				<button type="su bmit" value="submit" class="pure-button">register</button>
+				<input type="password" id="password" name="password" placeholder="password"></input>
+				<button type="su bmit" value="submit" class="pure-button button-orange">register</button>
 			</fieldset>
 		</form>
 	</div>
@@ -30,12 +30,12 @@
 	<div class="forms pure-u-1-3" id="login-form-div">
 		<form class="pure-form pure-form-stacked" id="home-login-form" action="login" method="post">
 			<fieldset>
-				<legend>Login</legend>
+				<legend><strong>Login</strong></legend>
 				<label for="loginemail"> email: </label>
-				<input type="text" id="loginemail" name="loginemail"></input>
+				<input type="text" id="loginemail" name="loginemail" placeholder="email"></input>
 				<label for="loginpassword"> password: </label>
-				<input type="password" id="loginpassword" name="loginpassword"></input>
-				<button type="submit" value="submit" class="pure-button">login</button>
+				<input type="password" id="loginpassword" name="loginpassword" placeholder="password"></input>
+				<button type="submit" value="submit" class="pure-button button-orange">login</button>
 			</fieldset>
 		</form>
 	</div>
