@@ -13,7 +13,7 @@ var app = express();
 
 // configuration for passport
 app.use(express.static('public'));
-app.use(express.favicon(__dirname + '/public/img/favicon.ico'));
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(cookieParser());
 app.use(bodyParser());
 app.use(session({ secret: 'iwantingtotalktosomebooty' }));
