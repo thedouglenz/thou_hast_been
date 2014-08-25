@@ -3,7 +3,7 @@ var hbs = require('express-handlebars');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-var session = require('express-session');
+var session = require('express-session'); 
 var passport = require('passport'), 
 	LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
@@ -13,7 +13,6 @@ var app = express();
 
 // configuration for passport
 app.use(express.static('public'));
-app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.use(cookieParser());
 app.use(bodyParser());
 app.use(session({ secret: 'iwantingtotalktosomebooty' }));
