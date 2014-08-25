@@ -103,6 +103,6 @@ app.use(function(req, res) {
 	res.render('404');
 });
 
-app.listen(process.env.PORT || 5000, function() {
+app.listen(process.env.PORT || 3000, function() {
 	console.log("thou hast been now listening on http://127.0.0.1:3000");
 });
