@@ -92,6 +92,7 @@ body {
 	display: inline;
 }
 
+/* Other sign in buttons */
 .facebook-buttons {
 	background-color: #4c66b4;
 	color: white;
@@ -99,3 +100,12 @@ body {
 	font-weight: bold;
 	padding: 5px;
 }
+
+.google-buttons {
+	background-color: #DD4B39;
+	color: white;
+	border-radius: 3px;
+	padding:5px;
+}
+
+/* End other sign in buttons */

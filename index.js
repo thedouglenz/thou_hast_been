@@ -98,6 +98,16 @@ app.get('/auth/facebook/callback', passport.authenticate('facebook', {
 	failureRedirect : '/'
 }));
 
+
+// Google sign up / login
+app.get('/auth/google', passport.authenticate('google', {scope : ['profile', 'email']}));
+
+app.get('/auth/google/callback',
+	passport.authenticate('google', {
+		successRedirect : '/dashboard',
+		failureRedirect : '/'
+	}));
+
 app.use(function(req, res) {
 	res.status(404);
 	res.render('404');

@@ -1,6 +1,6 @@
 <div class="pure-menu pure-menu-open pure-menu-horizontal">
 	<ul>
-		<a href="/" class="pure-menu-heading">thou hast been : dash : <span class="profile-user-email">{{{ user.local.email }}} {{{user.facebook.name}}}</span></a>
+		<a href="/" class="pure-menu-heading">thou hast been : dash : <span class="profile-user-email">{{{ user.local.email }}} {{{user.facebook.email}}} {{{user.facebook.name}}} {{{user.google.email}}} {{{user.google.name}}}</span></a>
 		<a class="pure-menu-heading batman-link" href="/logout">logout</a>
 		<li class="pure-menu-selected"><a href="/dashboard"> dash home </a></li>
 		<li><a href="#"> map story </a></li>
@@ -17,11 +17,14 @@
 	<div class="pure-u-1-2">
 		User information:
 		<ul>
-			<li>Name: {{{user.facebook.name}}} </li>
-			<li>Email: {{{user.local.email}}} </li>
-			<li>FB Email: {{{user.facebook.email}}}</li>
-			<li>Created: {{{user.local.created}}} </li>
-			<li>Modified: {{{user.local.modified}}} </li>
+			<li> Local name: {{{user.local.name }}} </li>
+			<li> FB Name: {{{user.facebook.name}}} </li>
+			<li> G+ Name: {{{user.google.name}}} </li>
+			<li> Email: {{{user.local.email}}} </li>
+			<li> FB Email: {{{user.facebook.email}}} </li>
+			<li> G+ Email: {{{user.google.email}}} </li>
+			<li> Created: {{{user.local.created}}} </li>
+			<li> Modified: {{{user.local.modified}}} </li>
 		</ul>
 	</div>
 	<!--- Column 2 --->
