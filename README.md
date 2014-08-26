@@ -51,7 +51,7 @@ A few quick commands to get you started:
 
 db.users.find(); // List all entries in the users collection
 
-db.users.remove({key : value)); // Delete an entry from the users collection based on a condition (like a where clause)
+db.users.remove({key : value}); // Delete an entry from the users collection based on a condition (like a where clause)
 
 <strong>git Workflows</strong>
 
