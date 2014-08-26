@@ -14,7 +14,9 @@ Instructions to start developing:
 4. run npm install in the program directory to install necessary dependencies (listed in package.json)
 5. run nodemon index.js to start up the app
 
+<hr>
 <strong>Onboarding Guide</strong>
+<hr>
 
 This application is a web server and future API for mobile device applications that will be built. Separate repos will house those. This is a learning focused project to teach Node.js as well as RESTful APIs and the Mongodb database system.
 
