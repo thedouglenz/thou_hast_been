@@ -20,7 +20,7 @@ This application is a web server and future API for mobile device applications t
 
 All of the source code in this repo pertains to the web server / web application. It is written in Node.js and uses the Express module to simplify much of the dirty details such as routing and parsing the URL string. Other modules are added as the application needs them. Install modules easily by running
 
-npm install --save <module_name>
+npm install --save [module_name]
 
 This will automatically update your package.json file.
 
