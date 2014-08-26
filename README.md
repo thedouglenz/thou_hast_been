@@ -15,7 +15,7 @@ Instructions to start developing:
 5. run nodemon index.js to start up the app
 
 <hr>
-<strong>Onboarding Guide</strong>
+<h3>Onboarding Guide</h3>
 <hr>
 
 This application is a web server and future API for mobile device applications that will be built. Separate repos will house those. This is a learning focused project to teach Node.js as well as RESTful APIs and the Mongodb database system.
@@ -26,7 +26,9 @@ npm install --save [module_name]
 
 This will automatically update your package.json file.
 
-<strong> Issues and Rating System </strong>
+<h4> Issues and Rating System </h4>
+<strong>Creating issues:</strong>
+Contributors should all feel free to add tickets to the issue tracker. Please simply label it with both a type (such as feature, enhancement, bug) and a difficulty (such as easy, medium, ...)
 
 Issues can be found under https://github.com/thedouglenz/thou_hast_been/issues. They follow a basic <strong> difficulty </strong>rating system:
 super-super-easy, super-easy, easy, easy-medium, medium, medium-hard, hard, super-hard, super-super-hard.
@@ -36,14 +38,14 @@ They also have a primitive <strong> priority </strong> rating system. The highes
 
 <strong>Reasearch issues: </strong>Finally, some issues will start with the word <strong>Research</strong>. To contribute to these issues I expect a fairly lengthy discussion to take place in the comments of the issue and are therefore a light, easy assignment that multiple people can work on simultaneously over a long period of time. As stated, lengthy discussions are expected since there is no source code written. These are here to facilitate learning and to generate the best course of action for the given subject. When the best course is arrived upon, a new issue will be created to implement it. 
 
-<strong> Miscellaneous </strong>
+<h4> Miscellaneous </h4>
 
 The starting point of the app is index.js. The command << nodemon index.js >> will start the app up locally and adapt to changes when index.js is modified. You can also change nodemon's settings so that it restarts the server when ANY file is changed which is my preference.
 
-<strong>Design Related</strong>
+<h4>Design Related</h4>
 Since modifying HTML and CSS is neither educational or difficult, the web design component of this project is handled by purecss.io. It is a really lightweight set of CSS modules that make web design a breeze. Visit purecss.io to check out this pretty easy set of tools and look at public/css/global.css to get onboard with the site design. Issues related to design will usually be rated super-super-easy to leave room for real programming tasks.
 
-<strong>About Mongodb:</strong>
+<h4>About Mongodb:</h4>
 
 Within the app, the mongoose module is used as node's driver for mongdb. Outside the app you may want to browse your local mongo database. To do so run 
 
@@ -57,7 +59,7 @@ db.users.find(); // List all entries in the users collection
 
 db.users.remove({key : value}); // Delete an entry from the users collection based on a condition (like a where clause)
 
-<strong>git Workflows</strong>
+<h4>git Workflows</h4>
 
 We will try to use branches for individual features. A typical workflow for a large new feature might flow as follows:
 
