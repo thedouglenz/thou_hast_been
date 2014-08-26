@@ -53,3 +53,15 @@ db.users.find(); // List all entries in the users collection
 
 db.users.remove({key : value); // Delete an entry from the users collection based on a condition (like a where clause)
 
+<strong>git Workflows</strong>
+
+We will try to use branches for individual features. A typical workflow for a large new feature might flow as follows:
+
+1. Contributor creates new branch "feature-X"
+2. Contributor checks out branch "feature-X"
+3. Contributor works for a while and pushes to "feature-X"
+4. Another contributor checks out branch "feature-X" to help with some work.
+5. Work continues on branch "feature-X"
+6. A contributor checks out branch "master" to fix an urgent bug quickly and returns to "feature-X"
+7. Work completes on "feature-X"
+8. "feature-X" is merged back with branch "master"
