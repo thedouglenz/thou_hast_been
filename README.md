@@ -3,7 +3,7 @@ thou_hast_been
 
 End users allow mobile device to regularly send GPS coordinates and other usage data such as photos, photos' time taken, photo's location where taken to thou_hast_been and enjoy looking at compiled data in some fashion on the web app.
 
-The web app will likely have a map and a date range picker and display the user's travel routes over that date range and thumbnails of the photos they took at the location on the map where they took them. Clicking on photos should enable viewing at a large scale and inform the user the datetime they were taken. The route may, in the future have a gradient color to show the progress of travel over the time range.
+The web app will likely have a map and a date range picker and display the user's travel routes over that date range and thumbnails of the photos they took at the location on the map where they took them. Clicking on photos should enable viewing at a large scale and inform the user the datetime they were taken. The route may, in the future, have a gradient color to show the progress of travel over the time range.
 
 Instructions to start developing:
 
@@ -24,14 +24,20 @@ npm install --save [module_name]
 
 This will automatically update your package.json file.
 
-Issues can be found under https://github.com/thedouglenz/thou_hast_been/issues. They follow a basic rating system:
+<strong> Issues and Rating System </strong>
+
+Issues can be found under https://github.com/thedouglenz/thou_hast_been/issues. They follow a basic <strong> difficulty </strong>rating system:
 super-super-easy, super-easy, easy, easy-medium, medium, medium-hard, hard, super-hard, super-super-hard.
 
-They also have a primitive priority system. The highest priority issue at any time will have the label "my-dawg" because you're my dawg if you can take this one off my hands. These tend to be annoying but necessary features or bugs.
+They also have a primitive <strong> priority </strong> rating system. The highest priority issue at any time will have the label "my-dawg" because you're my dawg if you can take this one off my hands. These tend to be annoying but necessary features or bugs.
+
+<strong>Reasearch issues: </strong>Finally, some issues will start with the word <strong>Research</strong>. To contribute to these issues I expect a fairly lengthy discussion to take place in the comments of the issue and are therefore a light, easy assignment that multiple people can work on simultaneously over a long period of time. As stated, lengthy discussions are expected since there is no source code written. These are here to facilitate learning and to generate the best course of action for the given subject. When the best course is arrived upon, a new issue will be created to implement it. 
+
+<strong> Miscellaneous </strong>
 
 The starting point of the app is index.js. The command << nodemon index.js >> will start the app up locally and adapt to changes when index.js is modified. You can also change nodemon's settings so that it restarts the server when ANY file is changed which is my preference.
 
-About Mongodb:
+<strong>About Mongodb:</strong>
 
 Within the app, the mongoose module is used as node's driver for mongdb. Outside the app you may want to browse your local mongo database. To do so run 
 
