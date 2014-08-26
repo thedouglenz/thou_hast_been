@@ -30,6 +30,7 @@ This will automatically update your package.json file.
 
 Issues can be found under https://github.com/thedouglenz/thou_hast_been/issues. They follow a basic <strong> difficulty </strong>rating system:
 super-super-easy, super-easy, easy, easy-medium, medium, medium-hard, hard, super-hard, super-super-hard.
+Most design related features or bugs (such as modifying CSS or HTML) will by default be labeled as super-super-easy and will never have my-dawg status.
 
 They also have a primitive <strong> priority </strong> rating system. The highest priority issue at any time will have the label "my-dawg" because you're my dawg if you can take this one off my hands. These tend to be annoying but necessary features or bugs.
 
@@ -38,6 +39,9 @@ They also have a primitive <strong> priority </strong> rating system. The highes
 <strong> Miscellaneous </strong>
 
 The starting point of the app is index.js. The command << nodemon index.js >> will start the app up locally and adapt to changes when index.js is modified. You can also change nodemon's settings so that it restarts the server when ANY file is changed which is my preference.
+
+<strong>Design Related</strong>
+Since modifying HTML and CSS is neither educational or difficult, the web design component of this project is handled by purecss.io. It is a really lightweight set of CSS modules that make web design a breeze. Visit purecss.io to check out this pretty easy set of tools and look at public/css/global.css to get onboard with the site design. Issues related to design will usually be rated super-super-easy to leave room for real programming tasks.
 
 <strong>About Mongodb:</strong>
 
