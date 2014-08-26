@@ -71,3 +71,7 @@ We will try to use branches for individual features. A typical workflow for a la
 6. A contributor checks out branch "master" to fix an urgent bug quickly and returns to "feature-X"
 7. Work completes on "feature-X"
 8. "feature-X" is merged back with branch "master"
+
+<h4>Heroku</h4>
+
+While the app is hosted on Heroku at thouhastbeen.cf, it is infrequently updated as changes need to be made to the OAuth providers like FB and G+ before a true production build is possible. For the time being, I will manage the pushes to Heroku and development and testing should occur on contributors' local machines.
