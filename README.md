@@ -1,6 +1,8 @@
 thou_hast_been
 ==============
 
+If you have any questions email me immediately: thedouglenz@gmail.com
+
 End users allow mobile device to regularly send GPS coordinates and other usage data such as photos, photos' time taken, photo's location where taken to thou_hast_been and enjoy looking at compiled data in some fashion on the web app.
 
 The web app will likely have a map and a date range picker and display the user's travel routes over that date range and thumbnails of the photos they took at the location on the map where they took them. Clicking on photos should enable viewing at a large scale and inform the user the datetime they were taken. The route may, in the future, have a gradient color to show the progress of travel over the time range.
