@@ -11,7 +11,7 @@ Instructions to start developing:
 
 1. install nodejs
 2. install nodemon globally [npm install -g nodemon]
-3. install mongodb (no other configurations need to be made as the app will generate mongo documents on its own)
+3. install mongodb (no other configurations need to be made as the app will generate mongo DBs/Collections/documents on its own)
 3. clone this git
 4. run npm install in the program directory to install necessary dependencies (listed in package.json)
 5. run nodemon index.js to start up the app
