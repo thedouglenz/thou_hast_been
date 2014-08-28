@@ -30,7 +30,13 @@ app.use(cookieParser())
 // mongoose
 mongoose.connect('mongodb://localhost/thou');
 
+// passport
 require('./config/passport')(passport);
+
+// nodemailer
+var mailer = require('./tools/email');
+// Usage: mailer('no-reply@thouhastbneen.com', 'Douglas Lenz <thedouglenz@gmail.com>', 'Welcome to thou hast been!', 'Hello user! Welcome!', '');
+// Can be used anywhere that imports mailer like the line above.
 
 var User;
 var db = mongoose.connection;
