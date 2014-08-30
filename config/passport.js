@@ -2,9 +2,13 @@ var LocalStrategy = require('passport-local').Strategy;
 var FacebookStrategy = require('passport-facebook').Strategy;
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
+var mailer = require('../tools/email');
+
 var User = require('../models/user');
 
 var configAuth = require('./auth');
+
+var config = require('./config.js');
 
 module.exports = function(passport) {
 	passport.serializeUser(function(user, done) {
@@ -37,9 +41,24 @@ module.exports = function(passport) {
 					var now = new Date();
 					newUser.local.created = now;
 					newUser.local.modified = now;
+
+					newUser.local.valid = false;
+
 					newUser.save(function(err) {
-						if(err)
+						if(err) {
 							throw err;
+						} else {
+							var from = 'no-reply@thouhastbneen.com';
+							var to = newUser.local.email;
+							var subject = 'Confirm your email at thou hast been';
+							var body = 'Thank you for signing up with thou hast been.';
+							body += ' We need you to follow the link below to confirm ';
+							'your email: \n\n';
+							body += config.ldomainname + '/validate_local_user_accnt/' + newUser.id + '\n\n';
+							body += 'Thank you,\n\nthou hast been';
+
+							mailer(from, to, subject, body, '');	
+						}
 						return done(null, newUser);
 					});
 				}
@@ -97,6 +116,7 @@ module.exports = function(passport) {
 					// Set other local fields based on facebook info
 					newUser.local.realname = profile.name.givenName + ' ' + profile.name.familyName;
 					newUser.local.email = profile.emails[0].value;
+					newUser.local.valid = true;
 
 					newUser.save(function(err) {
 						if(err)
@@ -137,6 +157,7 @@ module.exports = function(passport) {
 					// Set other local fields from google info
 					newUser.local.realname = profile.displayName;
 					newUser.local.email = profile.emails[0].value;
+					newUser.local.valid = true;
 
 					newUser.save(function(err) {
 						if(err)
