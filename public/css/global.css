@@ -1,5 +1,4 @@
 html {
-	background-color:#AFAFAF;
 	color: #000;
 	margin-left:auto;
 	margin-right:auto;
@@ -10,7 +9,7 @@ body {
 }
 
 .container {
-	width:80%;
+	width:90%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -33,13 +32,6 @@ body {
 .button-orange {
     background: rgb(223, 117, 20);
     color: White;
-}
-
-.home-forms form {
-	background-color: #DFDFDF;
-	border-radius: 5;
-	margin:5px;
-	padding:5px;
 }
 
 .home-forms form legend {
