@@ -114,6 +114,27 @@ app.get('/auth/google/callback',
 		failureRedirect : '/'
 	}));
 
+// Local registrant autnetication
+app.get('/validate_local_user_accnt/:id', function(req, res) {
+	// req.params.id is the user id we need to validate
+	var User = require('./models/user');
+	User.findOne({'_id':req.params.id}, function(err, user) {
+		if(err) {
+			throw err;
+		} else {
+			user.local.valid = true;
+
+			user.save(function(err) {
+				if(err) {
+					throw err;
+				}
+			})
+
+			res.render('dashboard');
+		}
+	});
+});
+
 app.use(function(req, res) {
 	res.status(404);
 	res.render('404');
