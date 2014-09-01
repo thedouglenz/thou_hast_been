@@ -81,6 +81,8 @@ module.exports = function(passport) {
 				return done(null, false, req.flash('homeMessage' , 'User not found'));
 			if(!user.validPassword(password))
 				return done(null, false, req.flash('homeMessage' , 'Incorrect password'));
+			if(!user.local.valid)
+				return done(null, false, req.flash('homeMessage', 'Please validate your email before logging in!'));
 
 			return done(null, user);
 		});
