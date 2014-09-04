@@ -58,25 +58,30 @@
 	<div class="pure-u-1-3">
 		<span class="home-heading">
 			<h3>enjoy life's adventures</h3>
-			<iframe
-				width="400"
-				height="250"
-				frameborder="0" style="border:0"
-				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyChKPOxUbel88z-PWxyZtitNpw9tVhKqBY&q=San+Diego+CA">
-			</iframe>
 		</span>
-		<p class="home-promote-p">Let <span class="our-name">thou hast been</span> effortlessly run in the background on your mobile device and capture the moments that matter to you.</p>
 	</div>
 	<div class="pure-u-1-3">
 		<span class="home-heading">
 			<h3>remember them forever</h3>
-			<iframe
-				width="400"
-				height="250"
-				frameborder="0" style="border:0"
-				src="https://www.google.com/maps/embed/v1/place?key=AIzaSyChKPOxUbel88z-PWxyZtitNpw9tVhKqBY&q=7166+Constitution+Dr,Indianapolis+IN">
-			</iframe>
 		</span>
-		<p class="home-promote-p">Look back into the past to see where you went on any day and see a map full of the photos you took.</p>
+	</div>
+	<div class="pure-g-r">
+		<div class="pure-u-2-3">
+			<div id="map"></div>
+		</div>
+	</div>
+	<div class="pure-g-r">
+		<div class="pure-u-1-3">
+			<p class="home-promote-p">Let <span class="our-name">thou hast been</span> effortlessly run in the background on your mobile device and capture the moments that matter to you.</p>
+		</div>
+		<div class="pure-u-1-3">
+			<p class="home-promote-p">Look back into the past to see where you went on any day and see a map full of the photos you took.</p>
+		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	L.mapbox.accessToken = 'pk.eyJ1IjoidGhlZG91Z2xlbnoiLCJhIjoiMm41Z0dTTSJ9.ydxDlbJykhYoLbZC3x42eA';
+
+	L.mapbox.map('map', 'thedouglenz.jdhg9gdo').setView([41.36, -99.954], 4);
+</script>
