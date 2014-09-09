@@ -134,7 +134,7 @@ app.get('/validate_local_user_accnt/:id', function(req, res) {
 				}
 			});
 
-			res.render('dashboard', {user: req.user});
+			res.render('dashboard', {user:user});
 		}
 	});
 });
