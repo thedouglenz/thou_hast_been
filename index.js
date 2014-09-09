@@ -132,9 +132,9 @@ app.get('/validate_local_user_accnt/:id', function(req, res) {
 				if(err) {
 					throw err;
 				}
-			})
+			});
 
-			res.render('dashboard');
+			res.render('dashboard', {user: req.user});
 		}
 	});
 });
