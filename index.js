@@ -80,11 +80,15 @@ app.get('/logout', function(req, res) {
 	res.redirect('/');
 });
 
+app.get('/llr', function(req, res) {
+	res.render('local_login_redirect', {user : req.user});
+});
+
 // Local sign up / login
 
 app.post('/register', passport.authenticate('local-signup', 
 	{
-		successRedirect: '/dashboard',
+		successRedirect: '/llr',
 		failureRedirect: '/',
 		failureFlash : true
 	}));
@@ -93,7 +97,7 @@ app.post('/register', passport.authenticate('local-signup',
 app.post('/login', passport.authenticate('local-login', {
 	successRedirect: '/dashboard',
 	failureRedirect: '/',
-	failureFlase : true})
+	failureFlash : true})
 );
 
 // Facebook sign up / login

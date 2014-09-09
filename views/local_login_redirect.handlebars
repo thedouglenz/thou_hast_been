@@ -1,0 +1,34 @@
+<style>
+	body {
+		font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+		background-color:  #252525;
+		color: #fff;
+	}
+	#ok-ill-do-that {
+		color: rgb(223, 117, 20);
+	}
+	#user-local-email {
+		color: rgb(223, 117, 20);
+	}
+</style>
+
+<div class="pure-menu pure-menu-open pure-menu-horizontal">
+	<ul>
+		<a href="/" class="pure-menu-heading">thou hast been : Thank you for registering</a>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="pure-g-r">
+		<div class="pure-u-1-2">
+			<p>
+				Thank you for registering. An email has been sent to <span id="user-local-email">{{{ user.local.email }}}</span> for validation purposes. Please check your email and click the link in the message to validate your account!
+			</p>
+		</div>
+		<div class="pure-u-1-2">
+			<p>
+			<a class="pure-button" id="ok-ill-do-that" href="/">Ok, I'll do that!</a>
+			</p>
+		</div>
+	</div>
+</div>
