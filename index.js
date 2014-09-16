@@ -8,6 +8,10 @@ var passport = require('passport'),
 	LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
 
+var debug = function(target) {
+	console.log(target);
+}
+
 // express
 var app = express();
 
