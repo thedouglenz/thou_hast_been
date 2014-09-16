@@ -38,7 +38,9 @@ Most design related features or bugs (such as modifying CSS or HTML) will by def
 
 They also have a primitive <strong> priority </strong> rating system. The highest priority issue at any time will have the label "my-dawg" because you're my dawg if you can take this one off my hands. These tend to be annoying but necessary features or bugs.
 
-<strong>Reasearch issues: </strong>Finally, some issues will start with the word <strong>Research</strong>. To contribute to these issues I expect a fairly lengthy discussion to take place in the comments of the issue and are therefore a light, easy assignment that multiple people can work on simultaneously over a long period of time. As stated, lengthy discussions are expected since there is no source code written. These are here to facilitate learning and to generate the best course of action for the given subject. When the best course is arrived upon, a new issue will be created to implement it. 
+<strong>Research issues: </strong>Finally, some issues will start with the word <strong>Research</strong>. To contribute to these issues I expect a fairly lengthy discussion to take place in the comments of the issue and are therefore a light, easy assignment that multiple people can work on simultaneously over a long period of time. As stated, lengthy discussions are expected since there is no source code written. These are here to facilitate learning and to generate the best course of action for the given subject. When the best course is arrived upon, a new issue will be created to implement it. 
+
+<strong>Opinion issues: </strong> These will often pertain to questions about UI/UX. There are constantly decisions that need to be made about the most favorable user experience for the largest portion of your audience. These issues will be stated much like the Research questions and will also require a lengthy discussion as the acceptable work on them, but will be of a more opinionated nature. Put yourself in the users' shoes for these issues when you correspond amongst the team.
 
 <h4> Miscellaneous </h4>
 
