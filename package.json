@@ -1,6 +1,6 @@
 {
   "name": "thou_hast_been",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Where hast thou been? Your device remembers.",
   "main": "index.js",
   "scripts": {
